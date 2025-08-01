@@ -1,0 +1,51 @@
+.SideBar-Logo {
+    width: 200px;
+    margin: 10px
+}
+
+.SideBar {
+    padding: 30px 0px 30px 30px;
+    background: #ffffff;
+    height: 100vh;
+}
+
+.miniProfile {
+    border-radius: 10px;
+    background: rgb(244, 244, 244);
+    padding: 20px;
+    margin: 20px 30px 20px 10px;
+    vertical-align: middle;
+}
+
+.SideBar-Link, .SideBar-Link:visited, .SideBar-Link:link{
+    text-decoration: none;
+}
+
+.profile-avatar {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(76, 43, 207);
+    margin-left: 10px;
+}
+
+.SideBar-Icon{
+    font-size: 1.5em;
+    line-height: 3em;
+    color:#363636;
+    margin-left: 30px;
+}
+
+.SideBar-SelectedBox{
+    border-right: solid 5px rgb(145, 227, 204);
+}
+
+.SideBar-SelectedBox a:nth-child(1){
+    color: rgb(145, 227, 204);
+
+}

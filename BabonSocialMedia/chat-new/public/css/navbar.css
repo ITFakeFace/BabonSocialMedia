@@ -1,0 +1,37 @@
+/* list of class
+- NavigationBar
+- NavigationBar-Item
+- NavigationBar-Avatar
+- NavigationBar-Line
+*/
+.NavigationBar{
+    vertical-align: middle;
+    text-align: right;
+}
+
+.NavigationBar-Avatar{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border:solid rgb(120, 120, 120) 2px;
+    margin-right: 15px;
+
+}
+
+.NavigationBar-Item{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.NavigationBar-Line{
+    border: solid black 1px;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.NavigationBar-Line, .NavigationBar-Avatar, .NavigationBar-Item{
+    gap: 25px;
+}

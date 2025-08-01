@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Schibsted_Grotesk;
+    src: url("../../collect_file/font/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf");
+}
+*{
+    font-family: Schibsted_Grotesk;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../../collect_file/newsfeed/image/BG.png"); 
+    background-size: 100%;
+    background-attachment: fixed;
+}

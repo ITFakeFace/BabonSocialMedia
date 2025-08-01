@@ -1,0 +1,40 @@
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+/* form login */
+.background-login{
+    background-image: url("../images/BG-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-login{
+    background-color: white;
+    border-radius: 45px;
+}
+/* form register */
+.form-register{
+    background-color: white;
+    height: auto;
+    border-radius: 20px;
+}
+
+.background-register{
+    background-image: url("../images/BG.png");
+}
+
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,345 @@
+/* list of class
+- Content-Newsfeed
+    + Content-Welcome
+        * Content-Welcome-Name
+        * Content-Welcome-Slogan
+    + Content-Post-Create
+        * Content-Post-Create-Title
+        * Content-Post-Create-Text
+        * Content-Post-Create-Extend
+    + Content-Feeds
+        * Content-Feeds-Post-Own
+        * Content-Feeds-Posts
+            _ Content-Feeds-Post
+                . Content-Feeds-Post-Avatar
+                . Content-Feeds-Post-Option
+-Content-Suggest
+*/
+
+.Content-Newsfeed{
+    padding: 10px 30px 10px 80px;
+}
+
+.Content-Welcome{
+    margin-left: 40px;  
+    margin-bottom: 50px;
+}
+
+.Content-Welcome-Name{
+    font-size: 64px;
+    font-weight: bold;
+    color: #6461b8;
+}
+
+.Content-Welcome-Slogan{
+    color: #656565;
+    font-size: 24px;
+}
+
+.Content-Post-Create{
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    padding: 40px 40px 40px 40px;
+}
+
+.Content-Post-Create-Title{
+    color: #81d6b5;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.Content-Post-Create-TextField, .Content-Textarea{
+    font-family: Arial, FontAwesome;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background: #f0f0f0;
+    padding: 40px 20px 30px 20px;
+    outline: none;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    height: fit-content;
+    line-height: 20px;
+    font-size: 20px;
+    resize: none;
+}
+.Content-Post-Create-TextField::placeholder{
+    opacity: 0.6;
+}
+
+.Content-Post-Create-Extend{
+    margin-top: 40px;
+    /* margin-bottom: 20px; */
+}
+
+.Content-Post-Create-Extend label{
+    color: #676767;
+    font-size: 16px;
+}
+.Content-Post-Create-Extend-Line{
+    line-height: 16px;
+    border:solid #797979 1px;
+    margin: 0 15px 0 10px;
+}
+
+.Content-Post-Create-Extend .col-5{
+    text-align: right;
+}
+
+.Content-Post-Create-Extend button{
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    background: #81d6b5;
+    border: none;
+    border-radius: 20px;
+    padding:10px 30px 10px 30px;
+}
+
+.Content-Feeds{
+    margin: 0;
+    padding: 0;
+}
+
+.Content-Feeds-Post-InfoLine{
+    display: flex;
+    align-items: center;
+}
+
+.Content-Feeds-Post-Avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Content-Feeds-Post-Info{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.Content-Feeds-Post-Info-Name{
+    font-size: 16px;
+    font-weight: bold;
+    color: #6a6a6a;
+}
+
+.Content-Feeds-Post-Info-Status{
+    font-size: 12px;
+    color: #6a6a6a;
+}
+
+.Content-Feeds-Post{
+    width: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 40px 40px 40px 40px;
+}
+
+.Content-Feeds-Post-Content{
+    width: 100%;
+    border-radius: 20px;
+    background: #f0f0f0;
+    margin-top: 20px;
+    padding: 20px 20px 20px 20px;
+    outline: none;
+    align-items: center;
+    height: auto;
+    box-sizing: border-box;
+    height: fit-content;
+    line-height: 20px;
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
+.Content-Feeds-Post-Image{
+    height: 100px;
+    margin-top: 20px;
+    width: auto;
+    vertical-align: middle;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.Content-Feeds-Post-Interact{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+    color:#656565;
+}
+
+.Content-Feeds-Post-Interact-Like,
+.Content-Feeds-Post-Interact-Dislike{
+    transition: color 0.5s linear;
+}
+.Content-Feeds-Post-Interact-Like:hover{
+    color:rgb(54, 135, 240);
+    transition: color 0.25s linear;
+}
+
+.Content-Feeds-Post-Interact-Dislike:hover{
+    color:rgb(248, 55, 55);
+    transition: color 0.25s linear;
+}
+.Content-Feeds-Post-Interact-Like.checked{
+    color:rgb(54, 135, 240);
+}
+
+.Content-Feeds-Post-Interact-Dislike.checked{
+    color:rgb(248, 55, 55);
+}
+
+.Content-Feeds-Post-Interact-Comment textarea{
+    display: block;
+    justify-content: space-around;
+}
+.Content-Feeds-Post-Interact-Comment textarea{
+    width: 100%;
+    outline: none;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 20px;
+    padding:20px 20px 10px 20px;
+    line-height: 14px;
+    font-size: 14px;    
+    height: auto;
+    box-sizing: border-box;
+    height: fit-content;
+    resize: none;
+}
+
+.Content-Feeds-Post-Interact-Comment textarea::placeholder{
+    font-family: Arial, FontAwesome;
+    color: #c2c2c2;
+}
+
+.Content-Feeds-Post-Interact-Comment .PostCommentBtnWrapper{
+    display: inline-flex;
+    
+}
+.Content-Feeds-Post-Interact-Comment .PostCommentBtn{
+    color: #ffffff;
+    background: #81d6b5;
+    padding: 5px 30px 5px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.Content-Feeds-Post-Interact-Comment .CommentOption{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+    color: #676767;
+}
+.Content-Feeds-Post-Interact .row .col-3 button,
+.Content-Feeds-Post-Interact .row .col-9 button{
+    background: #ffffff;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.Content-Feeds-Post-Interact .row .col-3 button:hover,
+.Content-Feeds-Post-Interact .row .col-9 button:hover{
+    transition: background 0.25s linear;
+    background: #e0e0e0;
+}
+
+.PostDetailModal-Content{
+    width: 100%;
+}
+
+.commentWrapper{
+    width: 90%;
+    display: flex;
+    height: fit-content;
+    margin-bottom: 20px;
+}
+
+.commentAvatar{
+    /* width: 15%; */
+    display: inline-flex;
+    margin: 0;
+    height: 100%;
+    justify-content: right;
+    align-items: start;
+}
+
+.commentAvatar img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.commentContent{
+    background: #f0f0f0;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 20px 10px 20px 20px;
+    border-radius: 20px;
+}
+
+.commentContent a,
+.commentContent a:visited,
+.commentContent a:link{
+    text-decoration: none;
+    color:#656565;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.commentContent hr{
+    line-height: 2px;
+}
+
+.btnCmtFunc{
+    border: none;
+    width: auto;
+    justify-content: center;
+    color:#cdcdcd;
+}
+
+.btnEditCmt:hover{
+    color:#6461b8;
+    transition: 0.5s linear;
+}
+
+.btnDeleteCmt:hover{
+    color:red;
+    transition: 0.5s linear;
+}
+
+.btnSaveCmt:hover {
+    color: green;
+    transition: 0.3s linear;
+}
+
+.btnResetCmt:hover {
+    color: red;
+    transition: 0.3s linear;
+}
+
+.Comment-Textarea{
+    width: 100%;
+    /* outline: none; */
+    background: #f0f0f0bd;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 20px 10px 20px;
+    line-height: 14px;
+    font-size: 14px;
+    height: auto;
+    box-sizing: border-box;
+    height: fit-content;
+    resize: none;
+}
